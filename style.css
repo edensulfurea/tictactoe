@@ -1,0 +1,25 @@
+/* Minimo indispensabile per vedere la board */
+#status { text-align: center; margin: 12px 0; }
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 6px;
+  width: max-content;     /* si adatta al contenuto */
+  margin: 20px auto;      /* centra la griglia */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;          /* quadrati */
+  border: 1px solid #000; /* bordi visibili */
+  display: grid;
+  place-items: center;    /* centrerà X/O */
+  font: 700 2rem system-ui, sans-serif;
+}
+
+#restart {
+  display: block;
+  margin: 12px auto;
+  padding: 6px 10px;
+}
